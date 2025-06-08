@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script defer src="main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <main>
+        <aside>
+            <div class="mobile-menu-toggle" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul class="Links">
+                <li onclick="Navigate(0)" class="activeLink"><i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </li>
+                <li onclick="Navigate(1)"><i class="fa-solid fa-user"></i>
+                    <p>About Me</p>
+                </li>
+                <li onclick="Navigate(2)"><i class="fa-solid fa-code"></i>
+                    <p>Projects</p>
+                </li>
+                <li onclick="Navigate(3)"><i class="fa-solid fa-images"></i>
+                    <p>Gallery</p>
+                </li>
+                <li onclick="Navigate(4)"><i class="fa-solid fa-comments"></i>
+                    <p>Contact Me</p>
+                </li>
+            </ul>
+        </aside>
+
+        <div class="swiper mySwiper">
+            <div class="SlideContainer swiper-wrapper">
+                <div class="swiper-slide home-slide">
+                    <div class="HomeContent">
+                        <h1>Hi! I'm <span class="stylized-name">Krupal</span>,</h1>
+                        <h2>A <span class="proffesions">Web Developer</span></h2>
+                        <p class="heroline">
+                        <p class="heroline">
+                            A passionate web developer and student at UPL University, turning ideas into interactive
+                            digital experiences using HTML, CSS, JavaScript, and Python.
+                        </p>
+                        </p>
+                        <div class="buttonGroup"><button>Hire Me</button><button>Contact Me</button></div>
+                    </div>
+                    <div class="SideImg">
+                        <div class="top-right-corner">
+                            <hr class="hr1">
+                            <hr class="hr2">
+                        </div>
+                        <img src="WIN_20240817_13_37_53_Pro.jpg" alt="">
+                        <div class="bottom-left-corner">
+                            <hr class="hr1">
+                            <hr class="hr2">
+                        </div>
+                    </div>
+                    <p class="slide-help">Scroll for next slide <i class="fa-solid fa-chevron-right fa-shake"></i>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="about-us">
+                        <h1 class="heading">About Me</h1>
+                        <h3 class="sub-heading">I'm Krupal, <span class="proffesions">A Web Developer & Learner</span>
+                        </h3>
+                        <p class="aboutme-deatils">
+                            I am currently pursuing my Bachelor's degree from <strong>UPL University of Sustainable
+                                Technology</strong>. I am passionate about web technologies and continuously improving
+                            my skills by working on real-world projects.
+                            <br><br>
+                            My expertise includes <strong>HTML, CSS, JavaScript</strong> for front-end development, and
+                            <strong>Python</strong> for scripting and backend development. I also have practical
+                            experience in <strong>Socket Programming</strong> with Python.
+                            <br><br>
+                            I’m familiar with Linux-based environments and regularly use tools like <strong>Git and
+                                GitHub</strong> for version control and project collaboration. As a self-motivated
+                            learner, I always look forward to building meaningful and creative software solutions.
+                        </p>
+
+                        <div class="about-me-divison">
+                            <div class="about-me-table">
+                                <li><span>Country:</span> India</li>
+                                <li><span>Availability:</span> 24/7</li>
+                                <li><span>Age:</span> 20</li>
+                                <li><span>Phone:</span> +91 8200068230</li>
+                                <li><span>Languages:</span> HTML, CSS, JS, Python</li>
+                                <li><span>University:</span> UPL University</li>
+                                <div class="buttonGroup">
+                                    <button>Hire Me</button>
+                                    <button>Contact Me</button>
+                                </div>
+                            </div>
+
+                            <div class="skill-bar">
+                                <li>
+                                    <p>HTML</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:99%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>CSS</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:90%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>JavaScript</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:85%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Python</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:80%"></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>Linux & Git</p>
+                                    <div class="bar">
+                                        <div class="active-bar" style="width:75%"></div>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide projects">
+                    <h1 class="heading">Projects</h1>
+
+                    <div class="project-card">
+                        <h2>YouTube Downloader</h2>
+                        <p>A Python-based GUI tool using Tkinter and Pytube.</p>
+                        <div class="project-links">
+                            <a href="https://example.com/youtube-downloader" target="_blank">View</a>
+                            <a href="https://github.com/Doshi-Krupal/YouTube-Downloader" target="_blank">Code</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h2>Password Manager (PassVault)</h2>
+                        <p>Store & generate strong passwords with login/signup system.</p>
+                        <div class="project-links">
+                            <a href="https://example.com/passvault" target="_blank">View</a>
+                            <a href="https://github.com/coderkrupal/passwordManger-py" target="_blank">Code</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h2>Internet Status Checker</h2>
+                        <p>A small JavaScript app to check internet connectivity.</p>
+                        <div class="project-links">
+                            <a href="https://example.com/internet-checker" target="_blank">View</a>
+                            <a href="https://github.com/coderkrupal/JS-INTERNETCHECKAPP-" target="_blank">Code</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h2>Virtual Assistant</h2>
+                        <p>A Python-based voice assistant for basic tasks.</p>
+                        <div class="project-links">
+                            <a href="https://example.com/virtual-assistant" target="_blank">View</a>
+                            <a href="https://github.com/coderkrupal/JS-VIRTUALASSISTANT" target="_blank">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide gallery">
+                    <h1 class="heading">Gallery</h1>
+                    <div class="project"><img src="https://picsum.photos/200/300?random=1" alt=""></div>
+                    <div class="project"><img src="https://picsum.photos/200/300?random=2" alt=""></div>
+                    <div class="project"><img src="https://picsum.photos/200/300?random=3" alt=""></div>
+                    <div class="project"><img src="https://picsum.photos/200/300?random=4" alt=""></div>
+                    <div class="project"><img src="https://picsum.photos/200/300?random=5" alt=""></div>
+                    <div class="project"><img src="https://picsum.photos/200/300?random=6" alt=""></div>
+                </div>
+
+                <div class="swiper-slide contactMe">
+                    <h1 class="heading">Contact Me</h1>
+
+                    <!-- Contact Info Boxes -->
+                    <div class="contactinfo">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+91 8200068230</p>
+                    </div>
+                    <div class="contactinfo">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Location</h3>
+                        <p>Surat, India</p>
+                    </div>
+                    <div class="contactinfo">
+                        <i class="fa-regular fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>krupaldoshi01@gmail.com</p>
+                    </div>
+                    <div class="contactinfo">
+                        <i class="fa-solid fa-globe"></i>
+                        <h3>GitHub</h3>
+                        <p><a href="https://github.com/Doshi-Krupal" target="_blank">github.com/Doshi-Krupal</a></p>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form>
+                        <h2>Send Me A Message</h2>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea rows="10" placeholder="Your Message..." required></textarea>
+                        <button class="primary">Send</button>
+                    </form>
+
+                    <!-- Social Links Section -->
+                    <div class="social-section">
+                        <h2>Connect with Me</h2>
+                        <div class="social-icons">
+                            <a href="https://github.com/Doshi-Krupal" target="_blank"><i
+                                    class="fa-brands fa-github"></i> GitHub</a>
+                            <a href="https://www.linkedin.com/in/your-link" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>
+                                Instagram</a>
+                            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i>
+                                Twitter</a>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <li>© 2025 Krupal Doshi. All rights reserved.</li>
+                    </footer>
+                </div>
+
+            </div>
+    </main>
+
+</body>
+
+</html>
